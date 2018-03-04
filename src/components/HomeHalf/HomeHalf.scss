@@ -1,0 +1,32 @@
+$left-bg: #47a3da;
+$right-bg: #ffffff;
+
+.home-half {
+  height: 100%;
+  opacity: 0.9;
+  width: 50%;
+  z-index: 1;
+  position: relative;
+
+  &-left {
+  }
+
+  &-right {
+  }
+
+  .home-overlay {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+    &-left {
+      background-color: $left-bg;
+    }
+
+    &-right {
+      background-color: $right-bg;
+    }
+  }
+
+}
