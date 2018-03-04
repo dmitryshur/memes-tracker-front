@@ -1,15 +1,22 @@
 .home-container {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
   height: 100vh;
-  background-image: url(/images/home-bg.jpeg);
   overflow: hidden;
+  position: relative;
+  width: 100%;
 
   .sliding-bg {
-    background: url('/images/home-bg.jpeg') repeat-x;
+    animation: move-bg 120s linear infinite alternate;
+    background-image: url('/images/home-bg.jpeg');
+    background-repeat: repeat-x;
     background-size: contain;
     height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 9000px;
-    animation: move-bg 120s linear infinite;
+    z-index: 0;
   }
 }
 
