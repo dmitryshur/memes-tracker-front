@@ -3,15 +3,29 @@ $right-bg: #ffffff;
 
 .home-half {
   height: 100%;
+  opacity: 0.9;
   width: 50%;
   z-index: 1;
-  opacity: 0.9;
+  position: relative;
 
   &-left {
-    background-color: $left-bg;
   }
 
   &-right {
-    background-color: $right-bg;
   }
+
+  .home-overlay {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    &-left {
+      background-color: $left-bg;
+    }
+
+    &-right {
+      background-color: $right-bg;
+    }
+  }
+
 }
