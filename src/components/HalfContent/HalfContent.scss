@@ -1,0 +1,64 @@
+$left-color: #fff;
+$right-color: #47a3da;
+
+.half-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+
+  &-logo {
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100px;
+  }
+
+  &-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  hr {
+    border: 0;
+    height: 2px;
+    margin: 6px 0;
+    width: 100%;
+  }
+
+  &-left {
+    color: $left-color;
+
+    .half-content-logo {
+      background-image: url('/images/newest-logo.png');
+    }
+
+    hr {
+      background: #fff;
+      background-image: linear-gradient(to right, #eee, #fff, #eee);
+    }
+  }
+
+  &-right {
+    color: $right-color;
+
+    .half-content-logo {
+      background-image: url('/images/liked-logo.png');
+    }
+
+    hr {
+      background: #47a3da;
+      background-image: linear-gradient(to right, #45a0ca, #47a3da, #45a0ca);
+    }
+  }
+
+  &-subtitle {
+    font-size: 1.8rem;
+  }
+}
