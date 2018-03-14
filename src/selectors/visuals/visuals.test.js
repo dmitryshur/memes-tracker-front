@@ -1,0 +1,7 @@
+import { getChosenSection } from './visuals.js';
+
+test('test the visuals section selector', () => {
+  const state = {visuals: {section: 'newest'}};
+  const section = 'newest';
+  expect(getChosenSection(state)).toBe('newest');
+});
