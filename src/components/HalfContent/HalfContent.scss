@@ -6,6 +6,7 @@ $right-color: #47a3da;
   display: flex;
   flex-direction: column;
   left: 50%;
+  outline: none;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -60,5 +61,9 @@ $right-color: #47a3da;
 
   &-subtitle {
     font-size: 1.8rem;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

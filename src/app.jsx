@@ -5,7 +5,6 @@ import configureStore from './store/configure-store.js';
 import './app.scss';
 
 const store = configureStore();
-console.log(store.getState());
 const jsx = <HomeContainer />;
 
 ReactDOM.render(jsx, document.getElementById('app'));
