@@ -1,5 +1,5 @@
-$left-bg: #47a3da;
-$right-bg: #ffffff;
+$newest-bg: #47a3da;
+$liked-bg: #ffffff;
 
 .home-half {
   height: 100%;
@@ -14,12 +14,12 @@ $right-bg: #ffffff;
     width: 100%;
     z-index: 0;
 
-    &-left {
-      background-color: $left-bg;
+    &-newest {
+      background-color: $newest-bg;
     }
 
-    &-right {
-      background-color: $right-bg;
+    &-liked {
+      background-color: $liked-bg;
     }
   }
 

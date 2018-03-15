@@ -1,6 +1,6 @@
 const setChosenSection = section => ({
   type: 'SET_CHOSEN_SECTION',
-  section
+  section,
 });
 
 export { setChosenSection };

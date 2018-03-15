@@ -1,5 +1,5 @@
-$left-color: #fff;
-$right-color: #47a3da;
+$newest-color: #fff;
+$liked-color: #47a3da;
 
 .half-content {
   align-items: center;
@@ -33,8 +33,8 @@ $right-color: #47a3da;
     width: 100%;
   }
 
-  &-left {
-    color: $left-color;
+  &-newest {
+    color: $newest-color;
 
     .half-content-logo {
       background-image: url('/images/newest-logo.png');
@@ -46,8 +46,8 @@ $right-color: #47a3da;
     }
   }
 
-  &-right {
-    color: $right-color;
+  &-liked {
+    color: $liked-color;
 
     .half-content-logo {
       background-image: url('/images/liked-logo.png');
