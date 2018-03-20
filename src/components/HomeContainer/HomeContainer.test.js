@@ -1,3 +1,8 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import HomeContainer from './HomeContainer.jsx';
+
 test('testing HomeContainer component', () => {
-  expect(1 + 1).toBe(2);
+  const wrapper = shallow(<HomeContainer />);
+  expect(wrapper).toMatchSnapshot();
 });

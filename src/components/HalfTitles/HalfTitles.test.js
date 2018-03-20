@@ -1,3 +1,8 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import HalfTitles from './HalfTitles.jsx';
+
 test('testing HalfTitles component', () => {
-  expect(1 + 1).toBe(2);
+  const wrapper = shallow(<HalfTitles />);
+  expect(wrapper).toMatchSnapshot();
 });
