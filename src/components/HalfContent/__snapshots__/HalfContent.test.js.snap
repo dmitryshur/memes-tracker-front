@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing HalfContent liked component 1`] = `
+<div
+  className="half-content half-content-liked"
+  data-id="liked"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="half-content-logo"
+  />
+  <div
+    className="half-content-title"
+  >
+    liked
+  </div>
+  <hr />
+  <div
+    className="half-content-subtitle"
+  >
+    Most liked memes
+  </div>
+</div>
+`;
+
+exports[`testing HalfContent liked component click simulation 1`] = `
+<div
+  className="half-content half-content-liked"
+  data-id="liked"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="half-content-logo"
+  />
+  <div
+    className="half-content-title"
+  >
+    liked
+  </div>
+  <hr />
+  <div
+    className="half-content-subtitle"
+  >
+    Most liked memes
+  </div>
+</div>
+`;
+
+exports[`testing HalfContent newest component 1`] = `
+<div
+  className="half-content half-content-newest"
+  data-id="newest"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="half-content-logo"
+  />
+  <div
+    className="half-content-title"
+  >
+    newest
+  </div>
+  <hr />
+  <div
+    className="half-content-subtitle"
+  >
+    Most recent memes
+  </div>
+</div>
+`;
+
+exports[`testing HalfContent newest component click simulation 1`] = `
+<div
+  className="half-content half-content-newest"
+  data-id="newest"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="half-content-logo"
+  />
+  <div
+    className="half-content-title"
+  >
+    newest
+  </div>
+  <hr />
+  <div
+    className="half-content-subtitle"
+  >
+    Most recent memes
+  </div>
+</div>
+`;

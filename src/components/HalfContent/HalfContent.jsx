@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { setChosenSection } from '../../actions/visuals/visuals';
 import './HalfContent.scss';
 
-const HalfContent = props => {
+export const HalfContent = props => {
   // change the state indicating which section is now opened
   const onContentClick = event => {
     props.setChosenSection(event.currentTarget.dataset.id);
