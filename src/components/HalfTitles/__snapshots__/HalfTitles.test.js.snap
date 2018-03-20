@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing HalfTitles component 1`] = `
+<div
+  className="half-titles"
+>
+  <div
+    className="main-title"
+  >
+    memes
+    <br />
+    tracker
+  </div>
+  <div
+    className="subtitle"
+  >
+    Your constant source of fun
+  </div>
+</div>
+`;
