@@ -6,7 +6,7 @@ import './HomeHalf.scss';
 import HalfTitles from '../HalfTitles/HalfTitles.jsx';
 import HalfContent from '../HalfContent/HalfContent.jsx';
 
-const HomeHalf = props => {
+export const HomeHalf = props => {
   // when one section is opened, the other is closed except in the starting phase
   const halfState = props.section === props.chosenSection ? 'opened' : 'closed';
 

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing HomeHalf liked component 1`] = `
+<div
+  className="home-half home-half-liked closed"
+>
+  <div
+    className="home-overlay home-overlay-liked"
+  />
+  <Connect(HalfContent)
+    section="liked"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf liked component with closed state 1`] = `
+<div
+  className="home-half home-half-liked closed"
+>
+  <div
+    className="home-overlay home-overlay-liked"
+  />
+  <Connect(HalfContent)
+    section="liked"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf liked component with default state 1`] = `
+<div
+  className="home-half home-half-liked closed"
+>
+  <div
+    className="home-overlay home-overlay-liked"
+  />
+  <Connect(HalfContent)
+    section="liked"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf liked component with opened state 1`] = `
+<div
+  className="home-half home-half-liked opened"
+>
+  <div
+    className="home-overlay home-overlay-liked"
+  />
+  <Connect(HalfContent)
+    section="liked"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf newest component 1`] = `
+<div
+  className="home-half home-half-newest closed"
+>
+  <div
+    className="home-overlay home-overlay-newest"
+  />
+  <HalfTitles />
+  <Connect(HalfContent)
+    section="newest"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf newest component with closed state 1`] = `
+<div
+  className="home-half home-half-newest closed"
+>
+  <div
+    className="home-overlay home-overlay-newest"
+  />
+  <HalfTitles />
+  <Connect(HalfContent)
+    section="newest"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf newest component with default state 1`] = `
+<div
+  className="home-half home-half-newest closed"
+>
+  <div
+    className="home-overlay home-overlay-newest"
+  />
+  <HalfTitles />
+  <Connect(HalfContent)
+    section="newest"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf newest component with opened state 1`] = `
+<div
+  className="home-half home-half-newest opened"
+>
+  <div
+    className="home-overlay home-overlay-newest"
+  />
+  <HalfTitles />
+  <Connect(HalfContent)
+    section="newest"
+  />
+</div>
+`;
