@@ -1,15 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import HomeContainer from './components/HomeContainer/HomeContainer.jsx';
-import configureStore from './store/configure-store';
-import './app.scss';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import HomeContainer from "./components/HomeContainer/HomeContainer.jsx";
+import MemesContainer from "./components/MemesContainer/MemesContainer.jsx";
+import configureStore from "./store/configure-store";
+import "./app.scss";
 
 const store = configureStore();
 const jsx = (
   <Provider store={store}>
-    <HomeContainer />
+    <React.Fragment>
+      <HomeContainer />
+      <MemesContainer />
+    </React.Fragment>
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById('app'));
+ReactDOM.render(jsx, document.getElementById("app"));
