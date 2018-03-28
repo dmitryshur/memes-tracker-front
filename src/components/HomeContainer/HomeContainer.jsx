@@ -1,15 +1,28 @@
-import React from 'react';
-import './HomeContainer.scss';
-import HomeHalf from '../HomeHalf/HomeHalf.jsx';
+import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import "./HomeContainer.scss";
+import { getChosenSection } from "../../selectors/visuals/visuals";
+import HomeHalf from "../HomeHalf/HomeHalf.jsx";
 
-const HomeContainer = () => {
-  return (
-    <div className="home-container">
-      <div className="sliding-bg" />
-      <HomeHalf section="newest" />
-      <HomeHalf section="liked" />
-    </div>
+export const HomeContainer = props => (
+  <div className="home-container">
+    <div className="sliding-bg" />
+    <HomeHalf section="newest" chosen={props.chosenSection === "newest"} />
+    <HomeHalf section="liked" chosen={props.chosenSection === "liked"} />
+  </div>
   );
+
+const mapStateToProps = state => ({
+  chosenSection: getChosenSection(state)
+});
+
+HomeContainer.propTypes = {
+  chosenSection: PropTypes.string
 };
 
-export default HomeContainer;
+HomeContainer.defaultProps = {
+  chosenSection: ''
+};
+
+export default connect(mapStateToProps)(HomeContainer);

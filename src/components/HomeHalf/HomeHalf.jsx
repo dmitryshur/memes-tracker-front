@@ -1,19 +1,16 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { getChosenSection } from '../../selectors/visuals/visuals';
-import './HomeHalf.scss';
-import HalfTitles from '../HalfTitles/HalfTitles.jsx';
-import HalfContent from '../HalfContent/HalfContent.jsx';
+import React from "react";
+import PropTypes from "prop-types";
+import "./HomeHalf.scss";
+import HalfTitles from "../HalfTitles/HalfTitles.jsx";
+import HalfContent from "../HalfContent/HalfContent.jsx";
 
 export const HomeHalf = props => {
-  // when one section is opened, the other is closed except in the starting phase
-  const halfState = props.section === props.chosenSection ? 'opened' : 'closed';
+  const chosenState = props.chosen ? "opened" : "closed";
 
   return (
-    <div className={`home-half home-half-${props.section} ${halfState}`}>
+    <div className={`home-half home-half-${props.section} ${chosenState}`}>
       <div className={`home-overlay home-overlay-${props.section}`} />
-      {props.section === 'newest' && <HalfTitles />}
+      {props.section === "newest" && <HalfTitles />}
       <HalfContent section={props.section} />
     </div>
   );
@@ -21,15 +18,11 @@ export const HomeHalf = props => {
 
 HomeHalf.propTypes = {
   section: PropTypes.string.isRequired,
-  chosenSection: PropTypes.string,
+  chosen: PropTypes.bool
 };
 
 HomeHalf.defaultProps = {
-  chosenSection: '',
+  chosen: false
 };
 
-const mapStateToProps = state => ({
-  chosenSection: getChosenSection(state),
-});
-
-export default connect(mapStateToProps, undefined)(HomeHalf);
+export default HomeHalf;
