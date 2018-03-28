@@ -6,7 +6,13 @@ import { getChosenSection } from "../../selectors/visuals/visuals";
 import HomeHalf from "../HomeHalf/HomeHalf.jsx";
 
 export const HomeContainer = props => (
-  <div className="home-container">
+  <div
+    className={
+        props.chosenSection === ""
+          ? "home-container"
+          : `home-container ${props.chosenSection}-opened`
+      }
+  >
     <div className="sliding-bg" />
     <HomeHalf section="newest" chosen={props.chosenSection === "newest"} />
     <HomeHalf section="liked" chosen={props.chosenSection === "liked"} />
@@ -22,7 +28,7 @@ HomeContainer.propTypes = {
 };
 
 HomeContainer.defaultProps = {
-  chosenSection: ''
+  chosenSection: ""
 };
 
 export default connect(mapStateToProps)(HomeContainer);

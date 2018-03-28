@@ -20,7 +20,7 @@ exports[`testing HomeContainer component 1`] = `
 
 exports[`testing HomeContainer component with liked section as the chosen section 1`] = `
 <div
-  className="home-container"
+  className="home-container liked-opened"
 >
   <div
     className="sliding-bg"
@@ -38,7 +38,7 @@ exports[`testing HomeContainer component with liked section as the chosen sectio
 
 exports[`testing HomeContainer component with newest section as the chosen section 1`] = `
 <div
-  className="home-container"
+  className="home-container newest-opened"
 >
   <div
     className="sliding-bg"
