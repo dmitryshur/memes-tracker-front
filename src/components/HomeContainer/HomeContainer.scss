@@ -11,11 +11,11 @@
   z-index: 1;
 
   &.newest-opened {
-    transform: translateX(84%);
+    transform: translateX(80%);
   }
 
   &.liked-opened {
-    transform: translateX(-84%);
+    transform: translateX(-80%);
   }
 
   .sliding-bg {

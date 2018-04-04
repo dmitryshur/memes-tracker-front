@@ -23,4 +23,39 @@ $liked-bg: #ffffff;
     }
   }
 
+  .back-arrow {
+    background-size: cover;
+    height: 40px;
+    opacity: 0;
+    outline: none;
+    pointer-events: none;
+    position: absolute;
+    top: 40px;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+    width: 40px;
+
+    &-newest {
+      background-image: url('/images/arrow-right.svg');
+      left: 20%;
+    }
+
+    &-liked {
+      background-image: url('/images/arrow-left.svg');
+      right: calc(20% - 40px);
+    }
+  }
+
+  &.opened {
+    .back-arrow {
+      opacity: 0.7;
+      pointer-events: all;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+
 }
