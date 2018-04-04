@@ -32,11 +32,12 @@ export const HomeHalf = props => {
 HomeHalf.propTypes = {
   section: PropTypes.string.isRequired,
   chosen: PropTypes.bool,
-  resetSections: PropTypes.func.isRequired
+  resetSections: PropTypes.func
 };
 
 HomeHalf.defaultProps = {
   chosen: false,
+  resetSections: () => {}
 };
 
 const mapDispatchToProps = dispatch => ({

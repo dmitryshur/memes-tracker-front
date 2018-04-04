@@ -7,6 +7,33 @@ exports[`testing HomeHalf liked component 1`] = `
   <div
     className="home-overlay home-overlay-liked"
   />
+  <div
+    className="back-arrow back-arrow-liked"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
+  <Connect(HalfContent)
+    section="liked"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf liked component when the back arrow is clicked 1`] = `
+<div
+  className="home-half home-half-liked opened"
+>
+  <div
+    className="home-overlay home-overlay-liked"
+  />
+  <div
+    className="back-arrow back-arrow-liked"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
   <Connect(HalfContent)
     section="liked"
   />
@@ -19,6 +46,13 @@ exports[`testing HomeHalf liked component with closed state 1`] = `
 >
   <div
     className="home-overlay home-overlay-liked"
+  />
+  <div
+    className="back-arrow back-arrow-liked"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
   />
   <Connect(HalfContent)
     section="liked"
@@ -33,6 +67,13 @@ exports[`testing HomeHalf liked component with default state 1`] = `
   <div
     className="home-overlay home-overlay-liked"
   />
+  <div
+    className="back-arrow back-arrow-liked"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
   <Connect(HalfContent)
     section="liked"
   />
@@ -45,6 +86,13 @@ exports[`testing HomeHalf liked component with opened state 1`] = `
 >
   <div
     className="home-overlay home-overlay-liked"
+  />
+  <div
+    className="back-arrow back-arrow-liked"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
   />
   <Connect(HalfContent)
     section="liked"
@@ -60,6 +108,34 @@ exports[`testing HomeHalf newest component 1`] = `
     className="home-overlay home-overlay-newest"
   />
   <HalfTitles />
+  <div
+    className="back-arrow back-arrow-newest"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
+  <Connect(HalfContent)
+    section="newest"
+  />
+</div>
+`;
+
+exports[`testing HomeHalf newest component when the back arrow is clicked 1`] = `
+<div
+  className="home-half home-half-newest opened"
+>
+  <div
+    className="home-overlay home-overlay-newest"
+  />
+  <HalfTitles />
+  <div
+    className="back-arrow back-arrow-newest"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
   <Connect(HalfContent)
     section="newest"
   />
@@ -74,6 +150,13 @@ exports[`testing HomeHalf newest component with closed state 1`] = `
     className="home-overlay home-overlay-newest"
   />
   <HalfTitles />
+  <div
+    className="back-arrow back-arrow-newest"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
   <Connect(HalfContent)
     section="newest"
   />
@@ -88,6 +171,13 @@ exports[`testing HomeHalf newest component with default state 1`] = `
     className="home-overlay home-overlay-newest"
   />
   <HalfTitles />
+  <div
+    className="back-arrow back-arrow-newest"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
   <Connect(HalfContent)
     section="newest"
   />
@@ -102,6 +192,13 @@ exports[`testing HomeHalf newest component with opened state 1`] = `
     className="home-overlay home-overlay-newest"
   />
   <HalfTitles />
+  <div
+    className="back-arrow back-arrow-newest"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
   <Connect(HalfContent)
     section="newest"
   />

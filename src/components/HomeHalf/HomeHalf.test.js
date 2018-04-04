@@ -49,3 +49,19 @@ test('testing HomeHalf liked component with closed state', () => {
   expect(wrapper.find('.closed').length).toBeGreaterThan(0);
   expect(wrapper).toMatchSnapshot();
 });
+
+test('testing HomeHalf newest component when the back arrow is clicked', () => {
+  const resetSections = jest.fn();
+  const wrapper = shallow(<HomeHalf section="newest" chosen={true} resetSections={resetSections}/>);
+  wrapper.find('.back-arrow').simulate('click');
+  expect(resetSections).toHaveBeenCalled();
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('testing HomeHalf liked component when the back arrow is clicked', () => {
+  const resetSections = jest.fn();
+  const wrapper = shallow(<HomeHalf section="liked" chosen={true} resetSections={resetSections}/>);
+  wrapper.find('.back-arrow').simulate('click');
+  expect(resetSections).toHaveBeenCalled();
+  expect(wrapper).toMatchSnapshot();
+});

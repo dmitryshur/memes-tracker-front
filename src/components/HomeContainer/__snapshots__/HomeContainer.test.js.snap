@@ -7,11 +7,11 @@ exports[`testing HomeContainer component 1`] = `
   <div
     className="sliding-bg"
   />
-  <HomeHalf
+  <Connect(HomeHalf)
     chosen={false}
     section="newest"
   />
-  <HomeHalf
+  <Connect(HomeHalf)
     chosen={false}
     section="liked"
   />
@@ -25,11 +25,11 @@ exports[`testing HomeContainer component with liked section as the chosen sectio
   <div
     className="sliding-bg"
   />
-  <HomeHalf
+  <Connect(HomeHalf)
     chosen={false}
     section="newest"
   />
-  <HomeHalf
+  <Connect(HomeHalf)
     chosen={true}
     section="liked"
   />
@@ -43,11 +43,11 @@ exports[`testing HomeContainer component with newest section as the chosen secti
   <div
     className="sliding-bg"
   />
-  <HomeHalf
+  <Connect(HomeHalf)
     chosen={true}
     section="newest"
   />
-  <HomeHalf
+  <Connect(HomeHalf)
     chosen={false}
     section="liked"
   />
