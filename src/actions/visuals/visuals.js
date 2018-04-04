@@ -3,4 +3,9 @@ const setChosenSection = section => ({
   section,
 });
 
-export { setChosenSection };
+const resetSections = () => ({
+  type: 'RESET_CHOSEN_SECTION',
+  section: undefined
+});
+
+export { setChosenSection, resetSections };

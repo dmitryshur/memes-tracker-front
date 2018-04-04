@@ -1,0 +1,19 @@
+$memes-newest-bg: #34495e;
+$memes-liked-bg: #ecf0f1;
+
+.memes-container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+
+  &.memes-container-newest {
+    background-color: $memes-newest-bg;
+  }
+
+  &.memes-container-liked {
+    background-color: $memes-liked-bg;
+  }
+}

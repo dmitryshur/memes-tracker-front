@@ -2,9 +2,21 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
+  left: 0;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 0;
+  transition: transform 1s;
   width: 100%;
+  z-index: 1;
+
+  &.newest-opened {
+    transform: translateX(80%);
+  }
+
+  &.liked-opened {
+    transform: translateX(-80%);
+  }
 
   .sliding-bg {
     animation: move-bg 120s linear infinite alternate;

@@ -14,6 +14,11 @@ const visuals = (state = { section: undefined }, action) => {
         ...state,
         section: action.section,
       };
+    case 'RESET_CHOSEN_SECTION':
+      return {
+        ...state,
+        section: undefined
+      };
     default:
       return state;
   }
