@@ -3,17 +3,30 @@ $memes-liked-bg: #ecf0f1;
 
 .memes-container {
   height: 100%;
-  left: 0;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 0;
+  transition-property: transform;
+  transition-duration: 1s;
 
   &.memes-container-newest {
     background-color: $memes-newest-bg;
+    left: 0;
+    transform: translateX(-100%);
+
+    &.opened {
+      transform: translateX(-20%);
+    }
   }
 
   &.memes-container-liked {
     background-color: $memes-liked-bg;
+    right: 0;
+    transform: translateX(100%);
+
+    &.opened {
+      transform: translateX(20%);
+    }
   }
 }
