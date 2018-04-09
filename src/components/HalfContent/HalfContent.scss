@@ -10,6 +10,8 @@ $liked-color: #47a3da;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition-duration: 1s;
+  transition-property: all;
   z-index: 21;
 
   &-logo {
@@ -44,6 +46,11 @@ $liked-color: #47a3da;
       background: #fff;
       background-image: linear-gradient(to right, #eee, #fff, #eee);
     }
+
+    &.opened {
+      left: 20%;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
   }
 
   &-liked {
@@ -57,10 +64,16 @@ $liked-color: #47a3da;
       background: #47a3da;
       background-image: linear-gradient(to right, #45a0ca, #47a3da, #45a0ca);
     }
+
+    &.opened {
+      left: 80%;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
   }
 
   &-subtitle {
     font-size: 1.8rem;
+    white-space: nowrap;
   }
 
   &:hover {

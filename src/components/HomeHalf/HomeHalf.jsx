@@ -24,7 +24,7 @@ export const HomeHalf = props => {
         onKeyPress={handleArrowClick}
         tabIndex="0"
       />
-      <HalfContent section={props.section} />
+      <HalfContent section={props.section} openState={chosenState} />
     </div>
   );
 };

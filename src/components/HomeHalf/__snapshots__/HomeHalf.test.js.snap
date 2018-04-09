@@ -15,6 +15,7 @@ exports[`testing HomeHalf liked component 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="closed"
     section="liked"
   />
 </div>
@@ -35,6 +36,7 @@ exports[`testing HomeHalf liked component when the back arrow is clicked 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="opened"
     section="liked"
   />
 </div>
@@ -55,6 +57,7 @@ exports[`testing HomeHalf liked component with closed state 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="closed"
     section="liked"
   />
 </div>
@@ -75,6 +78,7 @@ exports[`testing HomeHalf liked component with default state 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="closed"
     section="liked"
   />
 </div>
@@ -95,6 +99,7 @@ exports[`testing HomeHalf liked component with opened state 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="opened"
     section="liked"
   />
 </div>
@@ -116,6 +121,7 @@ exports[`testing HomeHalf newest component 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="closed"
     section="newest"
   />
 </div>
@@ -137,6 +143,7 @@ exports[`testing HomeHalf newest component when the back arrow is clicked 1`] = 
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="opened"
     section="newest"
   />
 </div>
@@ -158,6 +165,7 @@ exports[`testing HomeHalf newest component with closed state 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="closed"
     section="newest"
   />
 </div>
@@ -179,6 +187,7 @@ exports[`testing HomeHalf newest component with default state 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="closed"
     section="newest"
   />
 </div>
@@ -200,6 +209,7 @@ exports[`testing HomeHalf newest component with opened state 1`] = `
     tabIndex="0"
   />
   <Connect(HalfContent)
+    openState="opened"
     section="newest"
   />
 </div>
