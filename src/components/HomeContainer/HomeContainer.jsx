@@ -8,16 +8,14 @@ import HomeHalf from "../HomeHalf/HomeHalf.jsx";
 export const HomeContainer = props => (
   <div
     className={
-        props.chosenSection === ""
-          ? "home-container"
-          : `home-container ${props.chosenSection}-opened`
-      }
+      props.chosenSection === "" ? "home-container" : `home-container ${props.chosenSection}-opened`
+    }
   >
     <div className="sliding-bg" />
     <HomeHalf section="newest" chosen={props.chosenSection === "newest"} />
     <HomeHalf section="liked" chosen={props.chosenSection === "liked"} />
   </div>
-  );
+);
 
 const mapStateToProps = state => ({
   chosenSection: getChosenSection(state)

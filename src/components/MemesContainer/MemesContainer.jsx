@@ -4,15 +4,13 @@ import PropTypes from "prop-types";
 import { getChosenSection } from "../../selectors/visuals/visuals";
 import "./MemesContainer.scss";
 
-export const MemesContainer = props => (
-  <div
-    className={
-      props.chosenSection === ""
-        ? "memes-container"
-        : `memes-container memes-container-${props.chosenSection}`
-    }
-  />
-);
+export const MemesContainer = props => {
+  const matchingSectionOpened = props.chosenSection === props.section;
+  const classList = `memes-container memes-container-${props.section} ${
+    matchingSectionOpened ? "opened" : "closed"
+  }`;
+  return <div className={classList} />;
+};
 
 const mapStateToProps = state => ({
   chosenSection: getChosenSection(state)

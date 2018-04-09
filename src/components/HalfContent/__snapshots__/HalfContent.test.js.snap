@@ -2,7 +2,7 @@
 
 exports[`testing HalfContent liked component 1`] = `
 <div
-  className="half-content half-content-liked"
+  className="half-content half-content-liked closed"
   data-id="liked"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -28,7 +28,7 @@ exports[`testing HalfContent liked component 1`] = `
 
 exports[`testing HalfContent liked component click simulation 1`] = `
 <div
-  className="half-content half-content-liked"
+  className="half-content half-content-liked closed"
   data-id="liked"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -54,7 +54,7 @@ exports[`testing HalfContent liked component click simulation 1`] = `
 
 exports[`testing HalfContent newest component 1`] = `
 <div
-  className="half-content half-content-newest"
+  className="half-content half-content-newest closed"
   data-id="newest"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -80,7 +80,7 @@ exports[`testing HalfContent newest component 1`] = `
 
 exports[`testing HalfContent newest component click simulation 1`] = `
 <div
-  className="half-content half-content-newest"
+  className="half-content half-content-newest closed"
   data-id="newest"
   onClick={[Function]}
   onKeyPress={[Function]}

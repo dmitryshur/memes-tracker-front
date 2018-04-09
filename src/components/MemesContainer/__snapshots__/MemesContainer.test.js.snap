@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the rendering of the MemesContainer component of the liked section when closed 1`] = `
+<div
+  className="memes-container memes-container-liked closed"
+/>
+`;
+
+exports[`testing the rendering of the MemesContainer component of the liked section when opened 1`] = `
+<div
+  className="memes-container memes-container-liked opened"
+/>
+`;
+
+exports[`testing the rendering of the MemesContainer component of the newest section when closed 1`] = `
+<div
+  className="memes-container memes-container-newest closed"
+/>
+`;
+
+exports[`testing the rendering of the MemesContainer component of the newest section when opened 1`] = `
+<div
+  className="memes-container memes-container-newest opened"
+/>
+`;

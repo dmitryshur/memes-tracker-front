@@ -11,7 +11,8 @@ const jsx = (
   <Provider store={store}>
     <React.Fragment>
       <HomeContainer />
-      <MemesContainer />
+      <MemesContainer section="newest" />
+      <MemesContainer section="liked" />
     </React.Fragment>
   </Provider>
 );

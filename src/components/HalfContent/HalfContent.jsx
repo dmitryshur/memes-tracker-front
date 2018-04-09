@@ -1,8 +1,8 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { setChosenSection } from '../../actions/visuals/visuals';
-import './HalfContent.scss';
+import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { setChosenSection } from "../../actions/visuals/visuals";
+import "./HalfContent.scss";
 
 export const HalfContent = props => {
   // change the state indicating which section is now opened
@@ -10,9 +10,11 @@ export const HalfContent = props => {
     props.setChosenSection(event.currentTarget.dataset.id);
   };
 
+  const classList = `half-content half-content-${props.section} ${props.openState}`;
+
   return (
     <div
-      className={`half-content half-content-${props.section}`}
+      className={classList}
       data-id={props.section}
       onClick={onContentClick}
       onKeyPress={onContentClick}
@@ -20,12 +22,10 @@ export const HalfContent = props => {
       tabIndex="0"
     >
       <div className="half-content-logo" />
-      <div className="half-content-title">
-        {props.section === 'newest' ? 'newest' : 'liked'}
-      </div>
+      <div className="half-content-title">{props.section === "newest" ? "newest" : "liked"}</div>
       <hr />
       <div className="half-content-subtitle">
-        {props.section === 'newest' ? 'Most recent memes' : 'Most liked memes'}
+        {props.section === "newest" ? "Most recent memes" : "Most liked memes"}
       </div>
     </div>
   );
@@ -34,14 +34,16 @@ export const HalfContent = props => {
 HalfContent.propTypes = {
   section: PropTypes.string.isRequired,
   setChosenSection: PropTypes.func,
+  openState: PropTypes.string
 };
 
 HalfContent.defaultProps = {
-  setChosenSection: () => 'newest',
+  setChosenSection: () => "newest",
+  openState: "closed"
 };
 
 const mapDispatchToProps = dispatch => ({
-  setChosenSection: section => dispatch(setChosenSection(section)),
+  setChosenSection: section => dispatch(setChosenSection(section))
 });
 
 export default connect(undefined, mapDispatchToProps)(HalfContent);
