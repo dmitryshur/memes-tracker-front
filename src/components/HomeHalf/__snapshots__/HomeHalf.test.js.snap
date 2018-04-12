@@ -112,7 +112,9 @@ exports[`testing HomeHalf newest component 1`] = `
   <div
     className="home-overlay home-overlay-newest"
   />
-  <HalfTitles />
+  <HalfTitles
+    chosen={false}
+  />
   <div
     className="back-arrow back-arrow-newest"
     onClick={[Function]}
@@ -134,7 +136,9 @@ exports[`testing HomeHalf newest component when the back arrow is clicked 1`] = 
   <div
     className="home-overlay home-overlay-newest"
   />
-  <HalfTitles />
+  <HalfTitles
+    chosen={true}
+  />
   <div
     className="back-arrow back-arrow-newest"
     onClick={[Function]}
@@ -156,7 +160,9 @@ exports[`testing HomeHalf newest component with closed state 1`] = `
   <div
     className="home-overlay home-overlay-newest"
   />
-  <HalfTitles />
+  <HalfTitles
+    chosen={false}
+  />
   <div
     className="back-arrow back-arrow-newest"
     onClick={[Function]}
@@ -178,7 +184,9 @@ exports[`testing HomeHalf newest component with default state 1`] = `
   <div
     className="home-overlay home-overlay-newest"
   />
-  <HalfTitles />
+  <HalfTitles
+    chosen={false}
+  />
   <div
     className="back-arrow back-arrow-newest"
     onClick={[Function]}
@@ -200,7 +208,9 @@ exports[`testing HomeHalf newest component with opened state 1`] = `
   <div
     className="home-overlay home-overlay-newest"
   />
-  <HalfTitles />
+  <HalfTitles
+    chosen={true}
+  />
   <div
     className="back-arrow back-arrow-newest"
     onClick={[Function]}
