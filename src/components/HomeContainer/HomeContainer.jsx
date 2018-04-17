@@ -2,8 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import "./HomeContainer.scss";
-import { getChosenSection } from "../../selectors/visuals/visuals";
+import { getChosenSection, getNavbarStatus } from "../../selectors/visuals/visuals";
 import HomeHalf from "../HomeHalf/HomeHalf.jsx";
+import NavBar from "../NavBar/NavBar.jsx";
 
 export const HomeContainer = props => (
   <div
@@ -14,11 +15,13 @@ export const HomeContainer = props => (
     <div className="sliding-bg" />
     <HomeHalf section="newest" chosen={props.chosenSection === "newest"} />
     <HomeHalf section="liked" chosen={props.chosenSection === "liked"} />
+    <NavBar navbarStatus={props.navbarStatus} />
   </div>
 );
 
 const mapStateToProps = state => ({
-  chosenSection: getChosenSection(state)
+  chosenSection: getChosenSection(state),
+  navbarStatus: getNavbarStatus(state)
 });
 
 HomeContainer.propTypes = {
