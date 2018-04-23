@@ -1,2 +1,1 @@
-* write tests for the memes container component
-* animate the remaining visible part of the home container animation after a section has been chosen
+* add keyframes for the navar to animate according to the chosen section

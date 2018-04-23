@@ -177,8 +177,18 @@
 .cn-wrapper li:not(.active) a:focus {
   background-color: #0a56fc;
 }
+
 .cn-wrapper li:not(.active) a:focus {
   position: fixed;
+}
+
+// for animating navbar position:
+.home-container.newest-opened {
+  .cn-button {
+  }
+
+  .cn-wrapper {
+  }
 }
 
 @media screen and (max-width: 480px) {

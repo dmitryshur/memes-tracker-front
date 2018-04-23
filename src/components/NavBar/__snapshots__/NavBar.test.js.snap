@@ -22,7 +22,7 @@ exports[`testing NavBar when closed 1`] = `
           href="#"
         >
           <span
-            className="icon-picture"
+            className="fas fa-user-plus"
           />
         </a>
       </li>
@@ -31,7 +31,7 @@ exports[`testing NavBar when closed 1`] = `
           href="#"
         >
           <span
-            className="icon-headphones"
+            className="fas fa-home"
           />
         </a>
       </li>
@@ -40,25 +40,7 @@ exports[`testing NavBar when closed 1`] = `
           href="#"
         >
           <span
-            className="icon-home"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-        >
-          <span
-            className="icon-facetime-video"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-        >
-          <span
-            className="icon-envelope-alt"
+            className="fas fa-star"
           />
         </a>
       </li>
@@ -97,7 +79,7 @@ exports[`testing NavBar when opened 1`] = `
           href="#"
         >
           <span
-            className="icon-picture"
+            className="fas fa-user-plus"
           />
         </a>
       </li>
@@ -106,7 +88,7 @@ exports[`testing NavBar when opened 1`] = `
           href="#"
         >
           <span
-            className="icon-headphones"
+            className="fas fa-home"
           />
         </a>
       </li>
@@ -115,25 +97,7 @@ exports[`testing NavBar when opened 1`] = `
           href="#"
         >
           <span
-            className="icon-home"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-        >
-          <span
-            className="icon-facetime-video"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-        >
-          <span
-            className="icon-envelope-alt"
+            className="fas fa-star"
           />
         </a>
       </li>
