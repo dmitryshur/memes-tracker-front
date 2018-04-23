@@ -10,7 +10,7 @@
 }
 
 .cn-wrapper {
-  font-size: 1em;
+  font-size: 3em;
   width: 26em;
   height: 26em;
   overflow: hidden;
@@ -84,15 +84,13 @@
 
     &:nth-child(odd) {
       a {
-        background-color: #a11313;
-        background-color: hsla(0, 88%, 63%, 1);
+        background-color: #5691ff;
       }
     }
 
     &:nth-child(even) {
       a {
-        background-color: #a61414;
-        background-color: hsla(0, 88%, 65%, 1);
+        background-color: #83a9ef;
       }
     }
 
@@ -155,17 +153,18 @@
 .cn-button {
   border: none;
   background: none;
-  color: #f06060;
+  color: #0a56fc;
   text-align: center;
-  font-size: 1.8em;
-  padding-bottom: 1em;
-  height: 3.5em;
-  width: 3.5em;
+  font-size: 5em;
+  box-shadow: 0px 0px 30px -8px #777;
+  padding: 1em 0;
+  height: 5em;
+  width: 5em;
   background-color: #fff;
   position: fixed;
   left: 50%;
-  margin-left: -1.75em;
-  bottom: -1.75em;
+  transform: translate(-50%, 50%);
+  bottom: 0;
   border-radius: 50%;
   cursor: pointer;
   z-index: 11;
@@ -173,7 +172,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: #aa1010;
+    color: #2b6eff;
   }
 }
 
@@ -183,15 +182,13 @@
 }
 
 .cn-wrapper li.active a {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+  background-color: #0a56fc;
 }
 
 .cn-wrapper li:not(.active) a:hover,
 .cn-wrapper li:not(.active) a:active,
 .cn-wrapper li:not(.active) a:focus {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+  background-color: #0a56fc;
 }
 .cn-wrapper li:not(.active) a:focus {
   position: fixed;
