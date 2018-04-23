@@ -1,4 +1,4 @@
-import { getChosenSection } from './visuals.js';
+import { getChosenSection } from './visuals';
 
 test('test the visuals section selector', () => {
   const state = {visuals: {section: 'newest'}};

@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { MemesContainer } from "./MemesContainer.jsx";
+import { MemesContainer } from "./MemesContainer";
 
 test("testing the rendering of the MemesContainer component of the liked section when opened", () => {
   const wrapper = shallow(<MemesContainer section="liked" chosenSection="liked" />);

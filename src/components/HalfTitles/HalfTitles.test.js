@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import HalfTitles from './HalfTitles.jsx';
+import HalfTitles from './HalfTitles';
 
 test('testing HalfTitles component', () => {
   const wrapper = shallow(<HalfTitles />);

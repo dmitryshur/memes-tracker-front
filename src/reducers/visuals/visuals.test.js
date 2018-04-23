@@ -1,4 +1,4 @@
-import visualsReducer from './visuals.js';
+import visualsReducer from './visuals';
 
 test('testing first initiation of the visuals reducer', () => {
   const state = visualsReducer(undefined, { type: '@@INIT' });

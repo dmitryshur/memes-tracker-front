@@ -17,11 +17,13 @@ const mapStateToProps = state => ({
 });
 
 MemesContainer.propTypes = {
-  chosenSection: PropTypes.string
+  chosenSection: PropTypes.string,
+  section: PropTypes.string
 };
 
 MemesContainer.defaultProps = {
-  chosenSection: ""
+  chosenSection: "",
+  section: ""
 };
 
 export default connect(mapStateToProps)(MemesContainer);

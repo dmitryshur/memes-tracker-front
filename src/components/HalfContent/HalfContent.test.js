@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { HalfContent } from "./HalfContent.jsx";
+import { HalfContent } from "./HalfContent";
 
 test("testing HalfContent newest component", () => {
   const wrapper = shallow(<HalfContent section="newest" />);

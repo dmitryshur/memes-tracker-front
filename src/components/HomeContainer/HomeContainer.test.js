@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { HomeContainer } from './HomeContainer.jsx';
-import HomeHalf from '../HomeHalf/HomeHalf.jsx';
+import { HomeContainer } from './HomeContainer';
+import { HomeHalf } from '../HomeHalf/HomeHalf';
 
 test('testing HomeContainer component', () => {
   const wrapper = shallow(<HomeContainer />);
