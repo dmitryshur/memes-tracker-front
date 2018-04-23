@@ -7,17 +7,22 @@
  * @param {String} action.section
  * @returns {Object}
  */
-const visuals = (state = { section: undefined }, action) => {
+const visuals = (state = { section: undefined, navbar: "closed" }, action) => {
   switch (action.type) {
-    case 'SET_CHOSEN_SECTION':
+    case "SET_CHOSEN_SECTION":
       return {
         ...state,
-        section: action.section,
+        section: action.section
       };
-    case 'RESET_CHOSEN_SECTION':
+    case "RESET_CHOSEN_SECTION":
       return {
         ...state,
         section: undefined
+      };
+    case "TOGGLE_NAVBAR":
+      return {
+        ...state,
+        navbar: state.navbar === "closed" ? "open" : "closed"
       };
     default:
       return state;

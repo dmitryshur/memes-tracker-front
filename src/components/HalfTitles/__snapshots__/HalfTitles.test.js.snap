@@ -18,3 +18,41 @@ exports[`testing HalfTitles component 1`] = `
   </div>
 </div>
 `;
+
+exports[`testing HalfTitles when liked memes were chosen 1`] = `
+<div
+  className="half-titles"
+>
+  <div
+    className="main-title"
+  >
+    memes
+    <br />
+    tracker
+  </div>
+  <div
+    className="subtitle"
+  >
+    Your constant source of fun
+  </div>
+</div>
+`;
+
+exports[`testing HalfTitles when newest memes were chosen 1`] = `
+<div
+  className="half-titles hidden"
+>
+  <div
+    className="main-title"
+  >
+    memes
+    <br />
+    tracker
+  </div>
+  <div
+    className="subtitle"
+  >
+    Your constant source of fun
+  </div>
+</div>
+`;
