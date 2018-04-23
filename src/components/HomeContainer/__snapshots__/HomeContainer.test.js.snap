@@ -15,6 +15,9 @@ exports[`testing HomeContainer component 1`] = `
     chosen={false}
     section="liked"
   />
+  <Connect(NavBar)
+    navbarStatus="closed"
+  />
 </div>
 `;
 
@@ -33,6 +36,9 @@ exports[`testing HomeContainer component with liked section as the chosen sectio
     chosen={true}
     section="liked"
   />
+  <Connect(NavBar)
+    navbarStatus="closed"
+  />
 </div>
 `;
 
@@ -50,6 +56,9 @@ exports[`testing HomeContainer component with newest section as the chosen secti
   <Connect(HomeHalf)
     chosen={false}
     section="liked"
+  />
+  <Connect(NavBar)
+    navbarStatus="closed"
   />
 </div>
 `;

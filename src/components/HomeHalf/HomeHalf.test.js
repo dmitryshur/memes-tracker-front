@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { HomeHalf } from './HomeHalf.jsx';
+import { HomeHalf } from './HomeHalf';
 
 test('testing HomeHalf newest component', () => {
   const wrapper = shallow(<HomeHalf section="newest" />);

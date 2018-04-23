@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { resetSections } from "../../actions/visuals/visuals";
 import "./HomeHalf.scss";
-import HalfTitles from "../HalfTitles/HalfTitles.jsx";
-import HalfContent from "../HalfContent/HalfContent.jsx";
+import HalfTitles from "../HalfTitles/HalfTitles";
+import HalfContent from "../HalfContent/HalfContent";
 
 export const HomeHalf = props => {
   const chosenState = props.chosen ? "opened" : "closed";

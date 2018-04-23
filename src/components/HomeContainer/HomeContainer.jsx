@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './HomeContainer.scss';
 import { getChosenSection, getNavbarStatus } from '../../selectors/visuals/visuals';
-import { HomeHalf } from '../HomeHalf/HomeHalf';
-import { NavBar } from '../NavBar/NavBar';
+import HomeHalf from '../HomeHalf/HomeHalf';
+import NavBar from '../NavBar/NavBar';
 
 export const HomeContainer = props => (
   <div
