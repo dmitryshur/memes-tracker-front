@@ -35,27 +35,17 @@ export const NavBar = props => {
         <ul>
           <li>
             <a href="#">
-              <span className="icon-picture" />
+              <span className="fas fa-user-plus" />
             </a>
           </li>
           <li>
             <a href="#">
-              <span className="icon-headphones" />
+              <span className="fas fa-home" />
             </a>
           </li>
           <li>
             <a href="#">
-              <span className="icon-home" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span className="icon-facetime-video" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span className="icon-envelope-alt" />
+              <span className="fas fa-star" />
             </a>
           </li>
         </ul>
